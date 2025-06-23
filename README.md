@@ -13,8 +13,8 @@ nmap -sS -Pn 192.168.29.0/24 -oN scan_results.txt
 
 
 ## Files
-analysis.txt: Summary of findings
-nmapScan_capture.pcapng: Wireshark capture file
+analysis.txt: Summary of findings<br>
+nmapScan_capture.pcapng: Wireshark capture file<br>
 screenshots/: Scan and capture screenshots
 
 ## Key Findings
