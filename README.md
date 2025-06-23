@@ -9,7 +9,6 @@ To discover open ports on devices within the local network using Nmap and verify
 - Command Prompt
 
 ## Command Used
-```bash
 nmap -sS -Pn 192.168.29.0/24 -oN scan_results.txt
 
 
