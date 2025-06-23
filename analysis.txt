@@ -1,0 +1,32 @@
+-> Analysis of Local Network Scan (192.168.29.0/24)
+
+1. Total live hosts detected: 7
+
+2. Common Open Ports:
+   - HTTP/HTTPS (80, 443, 8080, 8000)
+   - File sharing (445, 139, 135)
+   - UPnP (1900), RTSP (554), IRC (6666)
+
+3. Observations:
+   - Router has multiple open web ports including alternate HTTPS (7443, 8443)
+   - Some hosts have risky ports open (e.g., IRC on 6666)
+   - My own system (192.168.29.237) has Microsoft file sharing ports exposed — potential risk.
+
+-> Wireshark Analysis Summary
+
+1. Captured live Nmap scan using Wireshark on interface: Wi-Fi
+
+2. Observed SYN packets (connection attempts) from my IP (192.168.29.237) to multiple hosts.
+
+3. Detected replies with SYN-ACK from:
+   - 192.168.29.1:80 (HTTP)
+   - 192.168.29.1:443 (HTTPS)
+   - 192.168.29.237:445 (SMB)
+
+4. Interpreted SYN-ACK as indication of open ports.
+
+5. No unusual traffic or malformed packets were detected.
+
+6. Recommendations:
+   - Disable SMB sharing on unused Windows systems
+   - Secure router admin interface with strong credentials
