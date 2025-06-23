@@ -10,7 +10,7 @@ To discover open ports on devices within the local network using Nmap and verify
 
 ## Command Used
 ```bash
-nmap -sS -Pn 192.168.29.0/24 -oN scan_results.txt
+nmap -sS -Pn 192.168.29.0/24 -oN scan_results.txt```
 
 ## Files
 analysis.txt: Summary of findings
